@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="vi">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Robot Tài Xỉu 85% - Hit Club</title>
+
+<link href="styles.css" rel="stylesheet"/></head>
+<body><div id="particles-js"></div>
+<!-- Màn hình đăng nhập -->
+<div id="loginScreen">
+<input autocomplete="off" id="keyInput" maxlength="5" placeholder="Nhập key (111)" type="password"/>
+<button id="loginBtn">Đăng nhập</button>
+<div id="loginMsg" style="margin-top:10px; color:#f00;"></div>
+</div>
+<!-- Màn hình robot -->
+<div id="robotScreen">
+<div aria-label="Robot tài xỉu" class="move" id="robotContainer">
+<div aria-label="Đầu robot mặt tròn" id="head" role="img">
+<div id="eyeLeft"></div>
+<div id="eyeRight"></div>
+</div>
+<div id="armLeft"><div class="hand"></div></div>
+<div id="board">---</div>
+<div id="armRight"><div class="hand"></div></div>
+<div id="body"></div>
+<div id="legLeft"></div>
+<div id="legRight"></div>
+</div>
+<div aria-atomic="true" aria-live="polite" id="timer">30</div>
+<div aria-atomic="true" aria-live="polite" id="prediction">Đoán: ---</div>
+<div id="totalCount">Lượt chơi: 0 / 20</div>
+<div aria-label="Mẹo cách chơi robot tài xỉu" id="tipsContainer">
+<div id="tipsTitle">Mẹo chơi robot tài xỉu</div>
+<button aria-label="Khóa/Mở mẹo chơi" aria-pressed="false" id="lockTipsBtn">Khóa</button>
+<div id="tipsText">
+<ul>
+<li>Robot đoán đúng khoảng 85%, không nên cược tất cả.</li>
+<li>Quan sát kết quả vài lần để hiểu pattern.</li>
+<li>Chơi có giới hạn, không tham lam.</li>
+<li>Dừng lại khi thắng liên tiếp để bảo toàn vốn.</li>
+<li>Không nên tin tuyệt đối, tài xỉu vẫn là trò may rủi.</li>
+</ul>
+</div>
+</div>
+</div>
+<!-- Tuyết rơi -->
+<div id="snow"></div>
+
+<script src="particles.js"></script><script src="script.js"></script></body>
+</html>
